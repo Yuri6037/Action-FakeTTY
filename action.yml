@@ -1,7 +1,9 @@
 name: faketty
 author: Yuri6037
 description: FakeTTY GitHub Action (https://github.com/Yuri6037/Action-FakeTTY)
-icon: terminal
+branding:
+  icon: 'terminal'
+  color: 'white'
 runs:
   using: 'node12'
   main: 'index.js'
