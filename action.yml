@@ -3,4 +3,4 @@ author: Yuri6037
 description: FakeTTY GitHub Action (https://github.com/Yuri6037/Action-FakeTTY)
 runs:
   using: 'node12'
-  pre: 'index.js'
+  main: 'index.js'
