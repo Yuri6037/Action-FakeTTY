@@ -1,4 +1,7 @@
-const { exec } = require("child_process");
+const core = require('@actions/core');
+const { exec } = require('child_process');
+
+core.exportVariable("TERM", "xterm-256color");
 
 if (process.platform === "win32") {
     //Setup windows
