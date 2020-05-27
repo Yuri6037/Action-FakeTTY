@@ -5,12 +5,12 @@ core.exportVariable("TERM", "xterm-256color");
 
 if (process.platform === "win32") {
     //Setup windows
-    exec.exec("Set-Alias faketty Invoke-Expression \"$args\"");
+    core.addPath("./script/win32/");
 } else if (process.platform === "darwin") {
     //Setup macosx
     exec.exec("brew install expect");
-    exec.exec("alias faketty=\"unbuffer $*\"");
+    core.addPath("./script/darwin/");
 } else {
     //Setup linux
-    exec.exec("alias faketty=\"script -c -e \\\"$*\\\"\"");
+    core.addPath("./script/linux/");
 }
