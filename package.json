@@ -1,0 +1,27 @@
+{
+  "name": "action-faketty",
+  "version": "1.0.0",
+  "description": "FakeTTY GitHub Action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuri6037/Action-FakeTTY.git"
+  },
+  "author": "Yuri6037",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "GitHub",
+    "Actions"
+  ],
+  "bugs": {
+    "url": "https://github.com/Yuri6037/Action-FakeTTY/issues"
+  },
+  "homepage": "https://github.com/Yuri6037/Action-FakeTTY#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.2.0"
+  }
+}
