@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const exec = require('@actions/exec');
-//const fs = require('fs');
+const fs = require('fs');
 
 //const homedir = require('os').homedir();
 const scriptDir = __dirname + "/script/";
@@ -14,7 +14,9 @@ if (process.platform === "win32") {
     //Setup macosx
     exec.exec("brew install expect");
     core.addPath(scriptDir + "darwin");
+    fs.chmodSync(scriptDir + "darwin/faketty", 0755);
 } else {
     //Setup linux
     core.addPath(scriptDir + "linux");
+    fs.chmodSync(scriptDir + "linux/faketty", 0755);
 }
