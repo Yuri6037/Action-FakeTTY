@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Yuri6037/Action-FakeTTY#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@actions/exec": "^1.0.4"
   }
 }
